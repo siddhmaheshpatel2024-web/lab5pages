@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Animated ball</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #111;
+            }
+            svg {
+              background: #111;
+            }
+
+            .moving-circle {
+              fill: #00e5ff;
+              animation: moveX 2s ease-in-out infinite alternate;
+            }
+
+            @keyframes moveX {
+              from {
+                transform: translateX(0);
+              }
+              to {
+                transform: translateX(320px);
+              }
+            }
+
+        </style>
+    </head>
+    <body>
+            <svg width="400" height="120" viewBox="0 0 400 120">
+            <circle class="moving-circle" cx="40" cy="60" r="20" />
+            </svg
+        
+    </body>
+
+</html>
